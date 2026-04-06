@@ -12,3 +12,18 @@ public class Main {
         botsApi.registerBot(new Bot());
     }
 }
+
+/*
+connect to DB postgresql://domofon:xid123mt@45.139.77.167/domofon
+ */
+
+
+/* ------- SQL template
+        SELECT * FROM ccodes cc
+	where
+			upper(cc."CITY") = upper('москва')
+		AND	upper(cc."STREET") like upper('%Артамонова%')
+		AND	upper(cc."HOUSE") = upper('10')
+		AND	upper(cc."ENT") = upper('4')
+	;
+ */
